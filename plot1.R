@@ -1,5 +1,0 @@
-mydata<-read.delim("household_power_consumption.txt",header=T,sep=";",stringsAsFactors=FALSE)
-mydata_sub<-subset(mydata,(Date=="1/2/2007"))
-mydata_sub2<-subset(mydata,(Date=="2/2/2007"))
-mydata_sub3<-rbind(mydata_sub,mydata_sub2)
-hist(as.numeric(mydata_sub3$Global_active_power),col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
